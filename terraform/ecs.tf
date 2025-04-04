@@ -24,7 +24,7 @@ resource "aws_ecs_task_definition" "td" {
   container_definitions = jsonencode([
     {
       name      = "app"
-      image     = "${aws_ecr_repository.my_repository.repository_url}:latest" # Replace with the actual image tag
+      image     = "456427985724.dkr.ecr.us-east-1.amazonaws.com/app" # Replace with the actual image tag
       cpu       = 256
       memory    = 512
       essential = true
