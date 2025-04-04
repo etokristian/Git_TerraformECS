@@ -29,6 +29,7 @@ on:
   push:
     branches:
       - main
+      - feature
 env:
   AWS_REGION: us-east-1
   ECS_CLUSTER: app_cluster
